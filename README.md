@@ -11,7 +11,7 @@ docker run -it --rm -u `id -u`:`id -g` -v $PWD:/work --net container:mydb ulrich
 ```
 
 If your database is running on a specific host or another port (as the default)
-simply use the corrent command as the command for this image, for example
+simply use the correct command as the command for this image, for example
 ```
 docker run -it --rm -u `id -u`:`id -g` -v $PWD:/work ulrichschreiner/rethink-backup rethink dump -c myDBserver:12345
 ```
