@@ -19,3 +19,5 @@ docker run -it --rm -u `id -u`:`id -g` -v $PWD:/work ulrichschreiner/rethink-bac
 The backup file is written to `/work` so this should be a mount. If you speicify
 the `-f` parameter to write the backup to another location, be sure to mount your
 destination directory!
+
+To restore data you must overwrite the default `CMD` with `rethink restore ...`.
