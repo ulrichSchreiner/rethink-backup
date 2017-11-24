@@ -21,3 +21,12 @@ the `-f` parameter to write the backup to another location, be sure to mount you
 destination directory!
 
 To restore data you must overwrite the default `CMD` with `rethink restore ...`.
+
+## RClone
+
+`rclone`  is added to this image for better access to 3rd level storage. You should mount your 
+config when running with something like
+```
+docker run ... -v -v /my/path/to/rclone.backup.conf:/root/.config/rclone/rclone.conf ulrichschreiner/rethink-backup ..."
+```
+
